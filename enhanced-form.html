@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week2 HTML5 - JAYMMYX Submission</title>
+  </head>
+  <body>
+    <header>
+      <!-- Lists, tables, media, and forms -->
+      <h1>Enhanced Form Example</h1>
+      <p>
+        This is an example of a form that includes various input types, lists,
+        and tables.
+      </p>
+    </header>
+    <main>
+      <!-- JaymmyX Skills -->
+      <section>
+        <h2>JaymmyX Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <!-- Python, Web Development and Database study timetable -->
+      <section>
+        <h2>Study Timetable</h2>
+        <table border="1">
+          <caption>
+            Weekly Study Timetable
+          </caption>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Python</th>
+              <th>Web Development</th>
+              <th>Database</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>2 hours</td>
+              <td>1 hour</td>
+              <td>1 hour</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>1 hour</td>
+              <td>2 hours</td>
+              <td>1 hour</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Favorite media in HTML5  -->
+      <section>
+        <h2>Favorite Music</h2>
+        <audio controls>
+          <source src="Ruger.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+        <img
+          src="https://placehold.co/300x200?text=Placeholder+Image"
+          alt="Placeholder image of learning"
+        />
+        <p>
+          This is a placeholder image representing the learning process in web
+          development.
+        </p>
+        <!-- Placeholder Video -->
+        <video controls height="200" width="300">
+          <source src="demo.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </section>
+      <!-- Form with various input types -->
+      <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+          <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+              minlength="3"
+              placeholder="John Doe"
+            /><br /><br />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="you@example.com"
+            /><br /><br />
+
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="99"
+              required
+            /><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Account Details</legend>
+
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              pattern="[a-zA-Z0-9]+"
+              placeholder="letters and numbers only"
+            /><br /><br />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="6"
+            /><br /><br />
+
+            <label for="confirm">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm"
+              name="confirm"
+              required
+              minlength="6"
+            /><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="language">Preferred Language:</label>
+            <select id="language" name="language">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JavaScript</option></select
+            ><br /><br />
+
+            <input type="checkbox" id="updates" name="updates" checked />
+            <label for="updates">Receive email updates</label><br /><br />
+          </fieldset>
+
+          <input type="submit" value="Register" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
